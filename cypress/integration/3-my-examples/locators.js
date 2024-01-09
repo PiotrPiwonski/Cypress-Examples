@@ -22,7 +22,19 @@ describe('E2E - Home Page', () => {
         // Pobieranie elementów po kilku atrybutach
         cy.get('[data-cy="search-bar-input"][data-testid="search-input"]');
 
-        // Zalecana praktyk apobierania elementów - po data-cy
+        // Zalecana praktyka apobierania elementów - po data-cy
         cy.get('[data-cy="search-bar-input"]');
+    });
+
+    it.only('Get items from olx.pl', () => {
+        cy.visit("/");
+
+        cy.contains('Kategorie główne');
+        cy.contains('[data-cy="home-categories-title"]','Kategorie główne');
+
+        cy.get('li').parents('.css-12bpg3w').find('li').eq(1);
+        cy.get('li').parents('.css-12bpg3w')
+            .find('li').contains('Pomoc');
+
     });
 });
