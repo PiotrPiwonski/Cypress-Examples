@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import AlertPage from "../../support/page-object/alertPage";
+
 describe('E2E - Alerts', () => {
     it('Alert', () => {
         cy.visit('https://testowanie-oprogramowania.pl/lekcje/alerty/');
@@ -17,5 +19,16 @@ describe('E2E - Alerts', () => {
 
         // kliknięcie w anuluj w alercie
         cy.on('window:confirm', () => false);
+    });
+
+    it('Alert POM', () => {
+        AlertPage.clickOnBtnAlert1();
+        AlertPage.verifyAlertText('Przykładowa treść alertu');
+    });
+
+    it('Alert confirm POM', () => {
+        AlertPage.clickOnBtnAlert2();
+        AlertPage.verifyAlertConfirmText();
+        AlertPage.acceptAlert();
     });
 });
