@@ -9,5 +9,7 @@ describe('E2E - Typing Input event', () => {
 
     it('Clearing on an input element', () => {
         cy.get('#search').clear();
+        //cy.get('#onetrust-accept-btn-handler').click();
+        cy.searchPhrase('komoda', 200);
     });
 });
