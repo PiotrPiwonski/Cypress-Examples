@@ -1,5 +1,4 @@
 import 'cypress-file-upload';
-
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -10,6 +9,14 @@ import 'cypress-file-upload';
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
+
+Cypress.Commands.add('openJobTab', () => {
+    cy.visit('https://www.olx.pl/praca/');
+});
+
+Cypress.Commands.add('searchPhrase', (text, deleyValue) => {
+    cy.get('#search').type(`${text}{enter}`, {delay: deleyValue});
+});
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
