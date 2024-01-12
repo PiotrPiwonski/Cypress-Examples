@@ -17,6 +17,12 @@ Cypress.Commands.add('openJobTab', () => {
 Cypress.Commands.add('searchPhrase', (text, deleyValue) => {
     cy.get('#search').type(`${text}{enter}`, {delay: deleyValue});
 });
+
+Cypress.Commands.add('login', (email, password) => {
+    cy.get('[placeholder="Email"]').type(email);
+    cy.get('[placeholder="Password"]').type(password);
+    cy.get('[type="submit"]').click();
+});
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
