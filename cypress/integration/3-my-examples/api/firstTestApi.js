@@ -39,4 +39,12 @@ describe('E2E - API tests', () => {
             expect(res.response.statusMessage).to.equal(apiData.statusMessage403);
         });
     });
+
+    it('correct login', () => {
+        // tu następuje mokowanie
+        cy.intercept('GET', 'https://api.realworld.io/api/tags', {fixture: 'tags.json'})
+            .as('tagRequest');
+        cy.login('piwonskipiotrp@gmail.com', 'Piotrek@');
+        cy.wait('@tagRequest');
+    });
 });
