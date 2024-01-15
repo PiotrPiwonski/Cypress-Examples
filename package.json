@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "all": "npx cypress run",
+    "spec": "npx cypress run --spec 'cypress/integration/3-my-examples/2-clicking.js'",
+    "chrome": "npx cypress run --browser chrome --spec 'cypress/integration/3-my-examples/2-clicking.js' --headed"
   },
   "author": "",
   "license": "ISC",
