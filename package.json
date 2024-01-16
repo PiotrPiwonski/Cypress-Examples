@@ -8,7 +8,9 @@
     "open": "npx cypress open",
     "all": "npx cypress run",
     "spec": "npx cypress run --spec 'cypress/integration/3-my-examples/2-clicking.js'",
-    "chrome": "npx cypress run --browser chrome --spec 'cypress/integration/3-my-examples/2-clicking.js' --headed"
+    "chrome": "npx cypress run --browser chrome --spec 'cypress/integration/3-my-examples/2-clicking.js' --headed",
+    "dev:env": "npx cypress open --env configFile=development",
+    "prod:env": "npx cypress open --env configFile=production"
   },
   "author": "",
   "license": "ISC",
