@@ -1,4 +1,4 @@
-describe('LightHouse test', () => {
+describe('LightHouse test', function () {
     it('first lighthouse test', () => {
         cy.visit('https://testowanie-oprogramowania.pl');
         cy.lighthouse({
