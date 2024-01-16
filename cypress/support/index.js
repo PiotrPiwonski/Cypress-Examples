@@ -15,6 +15,19 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-dark'
 
+
+const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
+
+module.exports = (on, config) => {
+    on("before:browser:launch", (browser = {}, launchOptions) => {
+        prepareAudit(launchOptions);
+    });
+
+    on("task", {
+        lighthouse: lighthouse(), // calling the function is important
+    });
+};
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
