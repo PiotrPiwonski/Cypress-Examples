@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-17T12:29:33.181Z",
+    "end": "2024-01-17T12:29:36.441Z",
+    "duration": 3260,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5211694-31b5-4db5-9d21-3dbaad34d330",
+      "title": "",
+      "fullFile": "cypress/integration/3-my-examples/7-alerts.js",
+      "file": "cypress/integration/3-my-examples/7-alerts.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5f3328e-9650-49b7-8e4e-b1b2cdaa518b",
+          "title": "E2E - Alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alert",
+              "fullTitle": "E2E - Alerts Alert",
+              "timedOut": null,
+              "duration": 1253,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://testowanie-oprogramowania.pl/lekcje/alerty/');\ncy.get('#alert').click();\ncy.on('window:alert', text => {\n  expect(text).to.equal('Przykładowa treść alertu');\n});",
+              "err": {},
+              "uuid": "82d1a5d6-8778-4bec-9a23-5c1b4679fd49",
+              "parentUUID": "e5f3328e-9650-49b7-8e4e-b1b2cdaa518b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alert confirm",
+              "fullTitle": "E2E - Alerts Alert confirm",
+              "timedOut": null,
+              "duration": 104,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#alert-confirm').click();\ncy.on('window:confirm', text => {\n  expect(text).to.equal('Zaakceptuj aby kontynuować!');\n}); // kliknięcie w anuluj w alercie\ncy.on('window:confirm', () => false);",
+              "err": {},
+              "uuid": "1a8c33e0-17aa-4546-8fe2-4a0382263b65",
+              "parentUUID": "e5f3328e-9650-49b7-8e4e-b1b2cdaa518b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alert POM",
+              "fullTitle": "E2E - Alerts Alert POM",
+              "timedOut": null,
+              "duration": 119,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_alertPage.default.clickOnBtnAlert1();\n_alertPage.default.verifyAlertText('Przykładowa treść alertu');",
+              "err": {},
+              "uuid": "06028a4c-ec90-4e4a-a3a1-14bb1ec9f1c8",
+              "parentUUID": "e5f3328e-9650-49b7-8e4e-b1b2cdaa518b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alert confirm POM",
+              "fullTitle": "E2E - Alerts Alert confirm POM",
+              "timedOut": null,
+              "duration": 91,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_alertPage.default.clickOnBtnAlert2();\n_alertPage.default.verifyAlertConfirmText();\n_alertPage.default.acceptAlert();",
+              "err": {},
+              "uuid": "dfaf7bf8-3b61-42b1-98c7-81da2983c053",
+              "parentUUID": "e5f3328e-9650-49b7-8e4e-b1b2cdaa518b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82d1a5d6-8778-4bec-9a23-5c1b4679fd49",
+            "1a8c33e0-17aa-4546-8fe2-4a0382263b65",
+            "06028a4c-ec90-4e4a-a3a1-14bb1ec9f1c8",
+            "dfaf7bf8-3b61-42b1-98c7-81da2983c053"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1567,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
