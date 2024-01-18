@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.998" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:38:08" tests="0" file="cypress/integration/3-my-examples/6-select.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Alerts" timestamp="2024-01-18T10:38:08" tests="4" time="3.973" failures="0">
+    <testcase name="E2E - Alerts Alert" time="1.516" classname="Alert">
+    </testcase>
+    <testcase name="E2E - Alerts Alert confirm" time="0.106" classname="Alert confirm">
+    </testcase>
+    <testcase name="E2E - Alerts Alert POM" time="0.107" classname="Alert POM">
+    </testcase>
+    <testcase name="E2E - Alerts Alert confirm POM" time="0.105" classname="Alert confirm POM">
+    </testcase>
+  </testsuite>
+</testsuites>

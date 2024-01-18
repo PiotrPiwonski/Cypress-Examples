@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-18T10:37:32.089Z",
+    "end": "2024-01-18T10:37:47.767Z",
+    "duration": 15678,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dc248e84-8dfa-47eb-9b4a-3d055acec1e7",
+      "title": "",
+      "fullFile": "cypress/integration/3-my-examples/4-Invoke.js",
+      "file": "cypress/integration/3-my-examples/4-Invoke.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa086fec-aa39-4704-bed0-bab610b45347",
+          "title": "E2E - Clicking checkbox",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Checkbox",
+              "fullTitle": "E2E - Clicking checkbox Checkbox",
+              "timedOut": null,
+              "duration": 15383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/'); // Do zaznaczenia checkbox-a używamy opcji .check()\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get('#search').type('szafa{enter}', {\n  delay: 200\n});\ncy.get('[data-testid=\"dropdown-head\"]').eq(0).click();\ncy.get('[data-testid=\"flyout-content\"]').find('input').then(checkbox => {\n  cy.get(checkbox).eq(0);\n  cy.get(checkbox).eq(1);\n  cy.get(checkbox).eq(2);\n  cy.get(checkbox).eq(3).check({\n    force: true\n  });\n  cy.get(checkbox).eq(3).invoke('prop', 'checked').then(checked => {\n    cy.log(checked);\n  });\n});",
+              "err": {},
+              "uuid": "d8e2158c-5056-4ca4-869b-c39fdae8842a",
+              "parentUUID": "aa086fec-aa39-4704-bed0-bab610b45347",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d8e2158c-5056-4ca4-869b-c39fdae8842a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15383,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "open": "npx cypress open",
-    "all": "npx cypress run",
+    "all": "npx cypress run --record --key 5faa404f-7a97-4c39-8d34-bc9a25a71132",
     "spec": "npx cypress run --spec 'cypress/integration/3-my-examples/7-alerts.js'",
     "chrome": "npx cypress run --browser chrome --spec 'cypress/integration/3-my-examples/7-alerts.js' --headed",
     "dev:env": "npx cypress open --env configFile=development",

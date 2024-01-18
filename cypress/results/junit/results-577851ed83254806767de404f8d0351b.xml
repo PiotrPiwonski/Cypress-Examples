@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.684" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:35:25" tests="0" file="cypress/integration/3-my-examples/10-assertions.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Select event" timestamp="2024-01-18T10:35:25" tests="1" time="4.658" failures="1">
+    <testcase name="E2E - Select event Selecting all options" time="0.000" classname="Selecting all options">
+      <failure message="The following error originated from your application code, not from Cypress.
+
+  &gt; adsbygoogle.push() error: No slot size for availableWidth=113
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application" type="TagError"><![CDATA[TagError: The following error originated from your application code, not from Cypress.
+
+  > adsbygoogle.push() error: No slot size for availableWidth=113
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+    at Nn (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:157:495)
+    at Pn (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:156:1174)
+    at Wn (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:161:87)
+    at bo (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:174:490)
+    at Hp (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:202:105)
+    at Gp (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:201:631)
+    at Pp (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:217:465)
+    at Lp.e.client (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:210:43)
+    at De.ea (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:54:239)
+    at mj (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:87:19)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

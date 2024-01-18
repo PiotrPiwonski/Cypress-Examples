@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.611" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:33:49" tests="0" file="cypress/integration/2-advanced-examples/window.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Window" timestamp="2024-01-18T10:33:49" tests="3" time="2.592" failures="0">
+    <testcase name="Window cy.window() - get the global window object" time="0.476" classname="cy.window() - get the global window object">
+    </testcase>
+    <testcase name="Window cy.document() - get the document object" time="0.315" classname="cy.document() - get the document object">
+    </testcase>
+    <testcase name="Window cy.title() - get the title" time="0.168" classname="cy.title() - get the title">
+    </testcase>
+  </testsuite>
+</testsuites>

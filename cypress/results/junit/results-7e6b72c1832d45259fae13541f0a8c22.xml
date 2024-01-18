@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.558" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:38:42" tests="0" file="cypress/integration/3-my-examples/8-file_upload.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Scrolling / hovering" timestamp="2024-01-18T10:38:42" tests="2" time="14.521" failures="0">
+    <testcase name="E2E - Scrolling / hovering Hovering" time="13.903" classname="Hovering">
+    </testcase>
+    <testcase name="E2E - Scrolling / hovering Scrolling" time="0.600" classname="Scrolling">
+    </testcase>
+  </testsuite>
+</testsuites>

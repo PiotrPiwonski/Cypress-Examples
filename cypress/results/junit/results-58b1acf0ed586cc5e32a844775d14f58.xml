@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.120" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:35:02" tests="0" file="cypress/integration/3-my-examples/10-assertions.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Assertions" timestamp="2024-01-18T10:35:02" tests="1" time="16.087" failures="1">
+    <testcase name="E2E - Assertions Assertions expect and should" time="0.000" classname="Assertions expect and should">
+      <failure message="Timed out retrying after 10000ms: Not enough elements found. Found &apos;23&apos;, expected &apos;24&apos;." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 10000ms: Not enough elements found. Found '23', expected '24'.
+    at Context.eval (https://www.olx.pl/__cypress/tests?p=cypress\integration\3-my-examples\10-assertions.js:124:62)
+
+      + expected - actual
+
+      -23
+      +24
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

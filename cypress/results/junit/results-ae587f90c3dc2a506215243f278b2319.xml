@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="17.957" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:36:48" tests="0" file="cypress/integration/3-my-examples/2-clicking.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Typing Input event" timestamp="2024-01-18T10:36:48" tests="2" time="17.916" failures="1">
+    <testcase name="E2E - Typing Input event Typing on an element input" time="9.163" classname="Typing on an element input">
+    </testcase>
+    <testcase name="E2E - Typing Input event Clearing on an input element" time="0.000" classname="Clearing on an input element">
+      <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; Cannot read properties of undefined (reading &apos;play&apos;)
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application" type="TypeError"><![CDATA[TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  > Cannot read properties of undefined (reading 'play')
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+    at t.value (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:180648)
+    at Object.Qi [as autoplay] (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:187454)
+    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:210065
+    at Array.map (<anonymous>)
+    at rs (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:209993)
+    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:218774
+    at l (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:75205)
+    at Generator._invoke (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:74993)
+    at Generator.next (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:75634)
+    at r (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1001)
+    at s (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1212)
+    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1271
+    at d (https://www.olx.pl/app/static/js/newRelic.1baad48e0.js:1:20605)
+    at new Promise (<anonymous>)
+    at new Promise (https://www.olx.pl/app/static/js/newRelic.1baad48e0.js:1:24678)
+    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1152
+    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:218873
+    at Array.forEach (<anonymous>)
+    at IntersectionObserver.<anonymous> (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:217734)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

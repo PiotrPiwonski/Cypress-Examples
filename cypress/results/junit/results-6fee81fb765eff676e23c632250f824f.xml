@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="11.161" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:35:38" tests="0" file="cypress/integration/3-my-examples/11-examplePageObjectModel.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Custom Commands" timestamp="2024-01-18T10:35:38" tests="1" time="11.118" failures="0">
+    <testcase name="E2E - Custom Commands Custom commands" time="10.617" classname="Custom commands">
+    </testcase>
+  </testsuite>
+</testsuites>

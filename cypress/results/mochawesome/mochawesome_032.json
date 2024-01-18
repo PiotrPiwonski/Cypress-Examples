@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-18T10:37:56.411Z",
+    "end": "2024-01-18T10:38:01.172Z",
+    "duration": 4761,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "563be31f-ba31-44ab-a3cb-45e08fa614a9",
+      "title": "",
+      "fullFile": "cypress/integration/3-my-examples/6-select.js",
+      "file": "cypress/integration/3-my-examples/6-select.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c3dadb78-440c-4207-9c46-7c923874ab4f",
+          "title": "E2E - Select event",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Selecting all options",
+              "fullTitle": "E2E - Select event Selecting all options",
+              "timedOut": null,
+              "duration": 2239,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://miroslawzelent.pl/kurs-html/lista-wyboru-select/');\n_selectPage.default.selectAllOption(); // cy.get('#jakiś_selektor').then(select => {\n//     cy.wrap(select).find('option').each(option => {\n//         cy.wrap(select).select(option.text());\n//     });\n// });\n//  Możecie to zapisać zgodnie z tym co podpowiada cypress. Tutaj, że za każdym razem mamy nową strone (nowy DOM), to musi pobrać ponownie argument. Ja zapisałem to tak i przechodzi.\n// cy.get('#jakiś_selektor').then(select => {\n//     cy.get(select).find(\"option\").each(option => {\n//         cy.get('#jakiś_selektor').select(option.text())\n//     });\n// });",
+              "err": {
+                "message": "TagError: The following error originated from your application code, not from Cypress.\n\n  > adsbygoogle.push() error: No slot size for availableWidth=113\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TagError: The following error originated from your application code, not from Cypress.\n\n  > adsbygoogle.push() error: No slot size for availableWidth=113\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at Nn (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:157:495)\n    at Pn (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:156:1174)\n    at Wn (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:161:87)\n    at bo (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:174:490)\n    at Hp (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:202:105)\n    at Gp (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:201:631)\n    at Pp (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:217:465)\n    at Lp.e.client (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:210:43)\n    at De.ea (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:54:239)\n    at mj (https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644487134112796:87:19)",
+                "diff": null
+              },
+              "uuid": "ada03aef-3062-4000-9137-9736065d78cf",
+              "parentUUID": "c3dadb78-440c-4207-9c46-7c923874ab4f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ada03aef-3062-4000-9137-9736065d78cf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2239,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
