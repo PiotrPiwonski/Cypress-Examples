@@ -16,6 +16,8 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+const { initPlugin } = require('cypress-plugin-snapshots/plugin');
+
 const fs = require('fs-extra');
 const path = require('path');
 
@@ -29,5 +31,8 @@ module.exports = (on, config) => {
     // `on` is used to hook into various events Cypress emits
     // `config` is the resolved Cypress config
     const file = config.env.configFile || 'development';
-    return getConfigurationByFile(file);
+    // return getConfigurationByFile(file);
+
+    initPlugin(on, config);
+    return config;
 }
