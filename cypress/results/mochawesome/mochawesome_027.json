@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-18T10:36:13.702Z",
+    "end": "2024-01-18T10:36:17.245Z",
+    "duration": 3543,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "562d70e1-b525-4a34-9bc8-aefd64d729ac",
+      "title": "",
+      "fullFile": "cypress/integration/3-my-examples/15-shadowDom.js",
+      "file": "cypress/integration/3-my-examples/15-shadowDom.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fc8b238e-0f68-40f2-93a7-8b3d4ed99816",
+          "title": "E2E - Shadow DOM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Use shadow method",
+              "fullTitle": "E2E - Shadow DOM Use shadow method",
+              "timedOut": null,
+              "duration": 1258,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.htmlelements.com/demos/menu/shadow-dom/index.htm'); // cy.contains('File');\n//cy.get('.smart-ui-component').shadow().contains('File').click();\ncy.get('.smart-ui-component').shadow().contains('Edit').click();",
+              "err": {},
+              "uuid": "8c9cc65b-0732-465d-be4d-8dc8e07e2ad5",
+              "parentUUID": "fc8b238e-0f68-40f2-93a7-8b3d4ed99816",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8c9cc65b-0732-465d-be4d-8dc8e07e2ad5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1258,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

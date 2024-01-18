@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-18T10:38:42.557Z",
+    "end": "2024-01-18T10:38:57.115Z",
+    "duration": 14558,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "84c36ff9-e8b9-4bd9-bbfc-0a47eaf93ea6",
+      "title": "",
+      "fullFile": "cypress/integration/3-my-examples/8-file_upload.js",
+      "file": "cypress/integration/3-my-examples/8-file_upload.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee5d0bbc-c94a-4822-b667-eb9ad0c11cef",
+          "title": "E2E - Scrolling / hovering",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Hovering",
+              "fullTitle": "E2E - Scrolling / hovering Hovering",
+              "timedOut": null,
+              "duration": 13903,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get('[title=\"Jak działa OLX.pl\"]').trigger('focus').click();",
+              "err": {},
+              "uuid": "29139818-5d96-4226-8c07-49dd77d8c8c8",
+              "parentUUID": "ee5d0bbc-c94a-4822-b667-eb9ad0c11cef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scrolling",
+              "fullTitle": "E2E - Scrolling / hovering Scrolling",
+              "timedOut": null,
+              "duration": 600,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"https://www.olx.pl/oferty/\"]').scrollIntoView();",
+              "err": {},
+              "uuid": "9d57c244-e2ba-47c4-b441-7faedd7e76eb",
+              "parentUUID": "ee5d0bbc-c94a-4822-b667-eb9ad0c11cef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "29139818-5d96-4226-8c07-49dd77d8c8c8",
+            "9d57c244-e2ba-47c4-b441-7faedd7e76eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14503,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

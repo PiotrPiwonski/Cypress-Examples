@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.969" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:39:27" tests="0" file="cypress/integration/3-my-examples/api/firstTestApi.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - executing the query directly to the API" timestamp="2024-01-18T10:39:27" tests="1" time="0.950" failures="1">
+    <testcase name="E2E - executing the query directly to the API Authorization and add article" time="0.000" classname="Authorization and add article">
+      <failure message="`cy.request()` failed on:
+
+https://api.realworld.io/api/articles/
+
+The response we received from your web server was:
+
+  &gt; 422: Unprocessable Entity
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://api.realworld.io/api/articles/
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;Authorization&quot;: &quot;Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozNTQ2fSwiaWF0IjoxNzA1NTc0MzY4LCJleHAiOjE3MTA3NTgzNjh9.Fw1fId7azPzbiRzBD-2rqjoejOld8zfTrA6dp5rz0ew&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.5.1 Chrome/94.0.4606.81 Electron/15.3.4 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;,
+  &quot;content-type&quot;: &quot;application/json&quot;,
+  &quot;content-length&quot;: 92
+}
+Body: {&quot;article&quot;:{&quot;tagList&quot;:[],&quot;title&quot;:&quot;test tytuł xxxxxyyy&quot;,&quot;description&quot;:&quot;test&quot;,&quot;body&quot;:&quot;test&quot;}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 422 - Unprocessable Entity
+Headers: {
+  &quot;date&quot;: &quot;Thu, 18 Jan 2024 10:39:29 GMT&quot;,
+  &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+  &quot;content-length&quot;: &quot;39&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;group\&quot;:\&quot;heroku-nel\&quot;,\&quot;max_age\&quot;:3600,\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https://nel.heroku.com/reports?ts=1705574368&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=lrHMR39E%2FZHli9m24nnYDk3GZ7E3WEAPN3%2FtJpfYm8k%3D\&quot;}]}&quot;,
+  &quot;reporting-endpoints&quot;: &quot;heroku-nel=https://nel.heroku.com/reports?ts=1705574368&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=lrHMR39E%2FZHli9m24nnYDk3GZ7E3WEAPN3%2FtJpfYm8k%3D&quot;,
+  &quot;nel&quot;: &quot;{\&quot;report_to\&quot;:\&quot;heroku-nel\&quot;,\&quot;max_age\&quot;:3600,\&quot;success_fraction\&quot;:0.005,\&quot;failure_fraction\&quot;:0.05,\&quot;response_headers\&quot;:[\&quot;Via\&quot;]}&quot;,
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+  &quot;etag&quot;: &quot;W/\&quot;27-BNeuaWQ7DHvW/r+pl+qdJiF06Is\&quot;&quot;,
+  &quot;via&quot;: &quot;1.1 vegur&quot;,
+  &quot;cf-cache-status&quot;: &quot;DYNAMIC&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;cf-ray&quot;: &quot;847636dceeb3f2d8-WAW&quot;,
+  &quot;alt-svc&quot;: &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+}
+Body: {
+  &quot;errors&quot;: {
+    &quot;title&quot;: [
+      &quot;must be unique&quot;
+    ]
+  }
+}
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://api.realworld.io/api/articles/
+
+The response we received from your web server was:
+
+  > 422: Unprocessable Entity
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://api.realworld.io/api/articles/
+Headers: {
+  "Connection": "keep-alive",
+  "Authorization": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozNTQ2fSwiaWF0IjoxNzA1NTc0MzY4LCJleHAiOjE3MTA3NTgzNjh9.Fw1fId7azPzbiRzBD-2rqjoejOld8zfTrA6dp5rz0ew",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.5.1 Chrome/94.0.4606.81 Electron/15.3.4 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate",
+  "content-type": "application/json",
+  "content-length": 92
+}
+Body: {"article":{"tagList":[],"title":"test tytuł xxxxxyyy","description":"test","body":"test"}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 422 - Unprocessable Entity
+Headers: {
+  "date": "Thu, 18 Jan 2024 10:39:29 GMT",
+  "content-type": "application/json; charset=utf-8",
+  "content-length": "39",
+  "connection": "keep-alive",
+  "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1705574368&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=lrHMR39E%2FZHli9m24nnYDk3GZ7E3WEAPN3%2FtJpfYm8k%3D\"}]}",
+  "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1705574368&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=lrHMR39E%2FZHli9m24nnYDk3GZ7E3WEAPN3%2FtJpfYm8k%3D",
+  "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+  "x-powered-by": "Express",
+  "access-control-allow-origin": "*",
+  "etag": "W/\"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is\"",
+  "via": "1.1 vegur",
+  "cf-cache-status": "DYNAMIC",
+  "server": "cloudflare",
+  "cf-ray": "847636dceeb3f2d8-WAW",
+  "alt-svc": "h3=\":443\"; ma=86400"
+}
+Body: {
+  "errors": {
+    "title": [
+      "must be unique"
+    ]
+  }
+}
+
+
+https://on.cypress.io/request
+    at https://www.olx.pl/__cypress/runner/cypress_runner.js:160634:80
+    at tryCatcher (https://www.olx.pl/__cypress/runner/cypress_runner.js:13022:23)
+    at Promise._settlePromiseFromHandler (https://www.olx.pl/__cypress/runner/cypress_runner.js:10957:31)
+    at Promise._settlePromise (https://www.olx.pl/__cypress/runner/cypress_runner.js:11014:18)
+    at Promise._settlePromise0 (https://www.olx.pl/__cypress/runner/cypress_runner.js:11059:10)
+    at Promise._settlePromises (https://www.olx.pl/__cypress/runner/cypress_runner.js:11139:18)
+    at _drainQueueStep (https://www.olx.pl/__cypress/runner/cypress_runner.js:7729:12)
+    at _drainQueue (https://www.olx.pl/__cypress/runner/cypress_runner.js:7722:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.olx.pl/__cypress/runner/cypress_runner.js:7738:5)
+    at Async.drainQueues (https://www.olx.pl/__cypress/runner/cypress_runner.js:7608:14)
+From Your Spec Code:
+    at Context.eval (https://www.olx.pl/__cypress/tests?p=cypress\integration\3-my-examples\api\secondTestApi.js:125:10)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.159" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:37:15" tests="0" file="cypress/integration/3-my-examples/3-UseInputs.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Invoke method" timestamp="2024-01-18T10:37:15" tests="1" time="9.136" failures="0">
+    <testcase name="E2E - Invoke method Invoke" time="8.894" classname="Invoke">
+    </testcase>
+  </testsuite>
+</testsuites>

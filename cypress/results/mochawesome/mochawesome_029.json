@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-18T10:36:48.154Z",
+    "end": "2024-01-18T10:37:06.111Z",
+    "duration": 17957,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74b950db-0f0c-4213-aa6d-3d7f5556875b",
+      "title": "",
+      "fullFile": "cypress/integration/3-my-examples/2-clicking.js",
+      "file": "cypress/integration/3-my-examples/2-clicking.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52269afc-e56e-4d36-b03d-c96d829564c2",
+          "title": "E2E - Typing Input event",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Typing on an element input",
+              "fullTitle": "E2E - Typing Input event Typing on an element input",
+              "timedOut": null,
+              "duration": 9163,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get('#search').type('szafa{enter}', {\n  delay: 200\n});",
+              "err": {},
+              "uuid": "4631b709-0552-427b-8f86-05a21bbd71e0",
+              "parentUUID": "52269afc-e56e-4d36-b03d-c96d829564c2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clearing on an input element",
+              "fullTitle": "E2E - Typing Input event Clearing on an input element",
+              "timedOut": null,
+              "duration": 8074,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search').clear(); //cy.get('#onetrust-accept-btn-handler').click();\ncy.searchPhrase('komoda', 200);",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'play')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'play')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at t.value (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:180648)\n    at Object.Qi [as autoplay] (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:187454)\n    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:210065\n    at Array.map (<anonymous>)\n    at rs (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:209993)\n    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:218774\n    at l (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:75205)\n    at Generator._invoke (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:74993)\n    at Generator.next (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:75634)\n    at r (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1001)\n    at s (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1212)\n    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1271\n    at d (https://www.olx.pl/app/static/js/newRelic.1baad48e0.js:1:20605)\n    at new Promise (<anonymous>)\n    at new Promise (https://www.olx.pl/app/static/js/newRelic.1baad48e0.js:1:24678)\n    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:1152\n    at https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:218873\n    at Array.forEach (<anonymous>)\n    at IntersectionObserver.<anonymous> (https://cdn.slots.baxter.olx.org/olxpl/rweb/release/init.min.js:2:217734)",
+                "diff": null
+              },
+              "uuid": "e536724d-0094-411e-9937-246e827a92c5",
+              "parentUUID": "52269afc-e56e-4d36-b03d-c96d829564c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4631b709-0552-427b-8f86-05a21bbd71e0"
+          ],
+          "failures": [
+            "e536724d-0094-411e-9937-246e827a92c5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 17237,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

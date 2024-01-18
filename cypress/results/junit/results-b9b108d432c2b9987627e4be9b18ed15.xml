@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.138" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-01-18T10:36:01" tests="0" file="cypress/integration/3-my-examples/13-lighthouse.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Variables" timestamp="2024-01-18T10:36:01" tests="1" time="6.097" failures="0">
+    <testcase name="E2E - Variables Environment variables" time="6.102" classname="Environment variables">
+    </testcase>
+  </testsuite>
+</testsuites>
