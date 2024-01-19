@@ -1,0 +1,10 @@
+
+free proxy:
+https://spys.one/free-proxy-list/PL/
+
+ustawianie jakiegoś proxy
+$env:HTTP_PROXY = "185.14.47.147:80"
+
+usuwanie proxy
+$env:HTTP_PROXY = ""
+lub unset
