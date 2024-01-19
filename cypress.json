@@ -30,5 +30,9 @@
       "threshold": 0.01,
       "thresholdType": "percent"
     }
+  },
+  "retries": {
+    "runMode": 2,
+    "openMode": 2
   }
 }
